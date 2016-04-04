@@ -1,0 +1,409 @@
+dministrator@XX-20140830MSKM MINGW32 ~
+$ pwd
+/c/Users/Administrator
+
+Administrator@XX-20140830MSKM MINGW32 ~
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+Administrator@XX-20140830MSKM MINGW32 ~
+$ cd D:/Git
+
+Administrator@XX-20140830MSKM MINGW32 /d/Git
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+Administrator@XX-20140830MSKM MINGW32 /d/Git
+$ cd learngit
+
+Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+          modified:   readme.txt
+
+
+	  Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+	  $ git remote add origin git@github.com:xiazemin/Ares
+
+	  Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+	  $ git push -u origin master
+	  The authenticity of host 'github.com (192.30.252.128)' can't be established.
+	  RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+	  Are you sure you want to continue connecting (yes/no)? yes
+	  Warning: Permanently added 'github.com,192.30.252.128' (RSA) to the list of know                n hosts.
+	  Permission denied (publickey).
+	  fatal: Could not read from remote repository.
+
+	  Please make sure you have the correct access rights
+	  and the repository exists.
+
+	  Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+	  $ git remote add Ares git@github.com:xiazemin/Ares
+
+	  Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+	  $ git push -u Ares master
+	  Permission denied (publickey).
+	  fatal: Could not read from remote repository.
+
+	  Please make sure you have the correct access rights
+	  and the repository exists.
+
+	  Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+	  $ git remote add origin git@github.com:xiazemin/Ares.git
+	  fatal: remote origin already exists.
+
+	  Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+	  $  git push -u origin master
+	  Warning: Permanently added the RSA host key for IP address '192.30.252.122' to t                he list of known hosts.
+	  Permission denied (publickey).
+	  fatal: Could not read from remote repository.
+
+	  Please make sure you have the correct access rights
+	  and the repository exists.
+
+	  Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+	  $  git push -u origin master
+	  Warning: Permanently added the RSA host key for IP address '192.30.252.120' to t                he list of known hosts.
+	  Permission denied (publickey).
+	  fatal: Could not read from remote repository.
+
+	  Please make sure you have the correct access rights
+	  and the repository exists.
+
+	  Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+	  $ git remote add  com:xiaze.git
+	  usage: git remote add [<options>] <name> <url>
+
+	      -f, --fetch           fetch the remote branches
+	          --tags                import all tags and associated objects when fetching
+		                            or do not fetch any tag at all (--no-tags)
+					        -t, --track <branch>  branch(es) to track
+						    -m, --master <branch>
+						                              master branch
+									          --mirror[=<push|fetch>]
+										                            set up remote as a mirror to push to or fetch from
+
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ git remote add intitRepository git@github.com:xiazemin/Ares.git
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $  git push -u intitRepository master
+													    Warning: Permanently added the RSA host key for IP address '192.30.252.129' to the list of known hosts.
+													    Permission denied (publickey).
+													    fatal: Could not read from remote repository.
+
+													    Please make sure you have the correct access rights
+													    and the repository exists.
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ ssh-keygen
+													    Generating public/private rsa key pair.
+													    Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa): D:/Git/key20160404.txt
+													    Enter passphrase (empty for no passphrase):
+													    Enter same passphrase again:
+													    Your identification has been saved in D:key20160404.txt.
+													    Your public key has been saved in D:key20160404.txt.pub.
+													    The key fingerprint is:
+													    SHA256:MIo4iqQLMPklJvSoM0rhlqJ8gIr78qH6qg6OPy8L2fw Administrator@XX-20140830MSKM
+													    The key's randomart image is:
+													    +---[RSA 2048]----+
+													    |                 |
+													    |                 |
+													    | .    o          |
+													    |.oo. . o         |
+													    |O++.o   S        |
+													    |X@oo             |
+													    |/=*              |
+													    |/*o+             |
+													    |#%B=E            |
+													    +----[SHA256]-----+
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $  git push -u intitRepository master
+													    Warning: Permanently added the RSA host key for IP address '192.30.252.123' to the list of known hosts.
+													    Permission denied (publickey).
+													    fatal: Could not read from remote repository.
+
+													    Please make sure you have the correct access rights
+													    and the repository exists.
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ cat ~/.ssh/id_rsa.pub
+													    cat: /c/Users/Administrator/.ssh/id_rsa.pub: No such file or directory
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ cat id_rsa.pub
+													    cat: id_rsa.pub: No such file or directory
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ cat key20160404_rsa.pub
+													    cat: key20160404_rsa.pub: No such file or directory
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ cat key20160404.pub
+													    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIPl4Il8EaDUuFG7PB7z8xr+//GzgeQqqECs69agMqsjwg4+QDm6evgtV40REJgy3scccgJCqRVaAzxCUCUU+EVblHv98X+VVKQ/cuOBjOMAj+LhDQs8x3pCPnEoswifOMAPpjTh6LYvfaUJhcOBp4nkUBF3TK9bMnuQXEiXufhBIjGE/up5W6lAXDh1+KiVEeMr1phMx4PeVxSoEufsfrz9w/2gYczHS7a3Im6Up/aEp7PbrfMRKaM8Ij0+Cfq9rrVZ0AA0mkhXS1xOcCY3r3fUr4U01+PrPSQ4PXqPJ22cKbVnYS7PE9oKd52K5VL/rPQpp1bGo/svo+OGUW5ZQD Administrator@XX-20140830MSKM
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $  git push -u intitRepository master
+													    Permission denied (publickey).
+													    fatal: Could not read from remote repository.
+
+													    Please make sure you have the correct access rights
+													    and the repository exists.
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ git remote add intitRepository git@github.com:xiazemin/Ares.git
+													    fatal: remote intitRepository already exists.
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ git remote add intitRepository git@github.com:xiazemin/intitRepository.git
+													    fatal: remote intitRepository already exists.
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ git remote add intitRepository git@github.com:xiazemin/intitRepository1.git
+													    fatal: remote intitRepository already exists.
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ git remote add intitRepository git@github.com:xiazemin/intitRepository11.git
+													    fatal: remote intitRepository already exists.
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ git remote add intitRepository1 git@github.com:xiazemin/intitRepository1.git
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ git remote add learngit git@github.com:xiazemin/intitRepository1.git
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ git remote add learngit git@github.com:xiazemin/Ares.git
+													    fatal: remote learngit already exists.
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ git remote add master git@github.com:xiazemin/Ares.git
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ ssh -T git@github.com
+													    Permission denied (publickey).
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ pwd
+													    /d/Git/learngit
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ ~
+													    bash: /c/Users/Administrator: Is a directory
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ ssh-keygen
+													    Generating public/private rsa key pair.
+													    Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+													    Enter passphrase (empty for no passphrase):
+													    Enter same passphrase again:
+													    Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa.
+													    Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub.
+													    The key fingerprint is:
+													    SHA256:HEHm/X4p3FfF1eUKVf32k+vuW+ejcaLge7jP3Vzxtq4 Administrator@XX-20140830MSKM
+													    The key's randomart image is:
+													    +---[RSA 2048]----+
+													    |       .+     ..B|
+													    |       o o   . o+|
+													    |        o . .   =|
+													    |       . . . . .+|
+													    |        S   . .o+|
+													    |           o . +=|
+													    |         .. +o+.X|
+													    |        ..o.oo**=|
+													    |         +=+ EBX+|
+													    +----[SHA256]-----+
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ ssh -T git@github.com
+													    Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':
+													    Hi xiazemin! You've successfully authenticated, but GitHub does not provide shell access.
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ git remote add origin git@github.com:xiazemin/Ares.git
+													    fatal: remote origin already exists.
+
+													    Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													    $ git push -u origin master
+													    Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':
+													    To git@github.com:xiazemin/Ares
+													     ! [rejected]        master -> master (fetch first)
+													     error: failed to push some refs to 'git@github.com:xiazemin/Ares'
+													     hint: Updates were rejected because the remote contains work that you do
+													     hint: not have locally. This is usually caused by another repository pushing
+													     hint: to the same ref. You may want to first integrate the remote changes
+													     hint: (e.g., 'git pull ...') before pushing again.
+													     hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+													     Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													     $ git remote add origin git@github.com:xiazemin/Ares_20160403.git
+													     fatal: remote origin already exists.
+
+													     Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													     $ git remote add learngit git@github.com:xiazemin/Ares_20160403.git
+													     fatal: remote learngit already exists.
+
+													     Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													     $ git push -u learngit master
+													     Warning: Permanently added the RSA host key for IP address '192.30.252.131' to the list of known hosts.
+													     Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':
+													     ERROR: Repository not found.
+													     fatal: Could not read from remote repository.
+
+													     Please make sure you have the correct access rights
+													     and the repository exists.
+
+													     Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													     $ git remote add Ares_20160403 git@github.com:xiazemin/Ares_20160403.git
+
+													     Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													     $ git push -u Ares_20160403 master
+													     Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':
+													     To git@github.com:xiazemin/Ares_20160403.git
+													      ! [rejected]        master -> master (fetch first)
+													      error: failed to push some refs to 'git@github.com:xiazemin/Ares_20160403.git'
+													      hint: Updates were rejected because the remote contains work that you do
+													      hint: not have locally. This is usually caused by another repository pushing
+													      hint: to the same ref. You may want to first integrate the remote changes
+													      hint: (e.g., 'git pull ...') before pushing again.
+													      hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+													      Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													      $ git push --help
+													      Launching default browser to display HTML ...
+
+													      Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+													      $ git remot
+													      \git: 'remot' is not a git command. See 'git --help'.
+
+													      Did you mean this?
+													              remote
+
+														      Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+														      $ git remote
+														      Ares
+														      Ares_20160403
+														      intitRepository
+														      intitRepository1
+														      learngit
+														      master
+														      origin
+
+														      Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+														      $ git remote show origin
+														      Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':
+														      * remote origin
+														        Fetch URL: git@github.com:xiazemin/Ares
+															  Push  URL: git@github.com:xiazemin/Ares
+															    HEAD branch: master
+															      Remote branch:
+															          master new (next fetch will store in remotes/origin)
+																    Local ref configured for 'git push':
+																        master pushes to master (local out of date)
+
+																	Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	$ git push origin master
+																	Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':
+																	To git@github.com:xiazemin/Ares
+																	 ! [rejected]        master -> master (fetch first)
+																	 error: failed to push some refs to 'git@github.com:xiazemin/Ares'
+																	 hint: Updates were rejected because the remote contains work that you do
+																	 hint: not have locally. This is usually caused by another repository pushing
+																	 hint: to the same ref. You may want to first integrate the remote changes
+																	 hint: (e.g., 'git pull ...') before pushing again.
+																	 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+																	 Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	 $ git push --all origin
+																	 Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':
+																	 To git@github.com:xiazemin/Ares
+																	  ! [rejected]        master -> master (fetch first)
+																	  error: failed to push some refs to 'git@github.com:xiazemin/Ares'
+																	  hint: Updates were rejected because the remote contains work that you do
+																	  hint: not have locally. This is usually caused by another repository pushing
+																	  hint: to the same ref. You may want to first integrate the remote changes
+																	  hint: (e.g., 'git pull ...') before pushing again.
+																	  hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+																	  Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	  $ git push --force origin master
+																	  Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':
+																	  Counting objects: 3, done.
+																	  Writing objects: 100% (3/3), 207 bytes | 0 bytes/s, done.
+																	  Total 3 (delta 0), reused 0 (delta 0)
+																	  To git@github.com:xiazemin/Ares
+																	   + cb0df68...2721f0f master -> master (forced update)
+
+																	   Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	   $ pwd
+																	   /d/Git/learngit
+
+																	   Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	   $ git checkout -b dev
+																	   fatal: Unable to create 'D:/Git/learngit/.git/index.lock': File exists.
+
+																	   If no other git process is currently running, this probably means a
+																	   git process crashed in this repository earlier. Make sure no other git
+																	   process is running and remove the file manually to continue.
+
+																	   Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	   $ git checkout -b dev1
+																	   fatal: Unable to create 'D:/Git/learngit/.git/index.lock': File exists.
+
+																	   If no other git process is currently running, this probably means a
+																	   git process crashed in this repository earlier. Make sure no other git
+																	   process is running and remove the file manually to continue.
+
+																	   Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	   $ pwd
+																	   /d/Git/learngit
+
+																	   Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	   $ ls -a
+																	   ./  ../  .git/  key20160404.pub  key20160404.txt  readme.txt
+
+																	   Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	   $ git branch experiment
+
+																	   Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	   $ git checkout experiment
+																	   fatal: Unable to create 'D:/Git/learngit/.git/index.lock': File exists.
+
+																	   If no other git process is currently running, this probably means a
+																	   git process crashed in this repository earlier. Make sure no other git
+																	   process is running and remove the file manually to continue.
+
+																	   Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	   $ ls
+																	   key20160404.pub  key20160404.txt  readme.txt
+
+																	   Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	   $ ls -a
+																	   ./  ../  .git/  key20160404.pub  key20160404.txt  readme.txt
+
+																	   Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	   $ git branch
+																	     experiment
+																	     * master
+
+																	     Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	     $ rm -f ./.git/index.lock
+
+																	     Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	     $ git branch
+																	       experiment
+																	       * master
+
+																	       Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (master)
+																	       $ git checkout experiment
+																	       M       readme.txt
+																	       Switched to branch 'experiment'
+
+																	       Administrator@XX-20140830MSKM MINGW32 /d/Git/learngit (experiment)
+																	       $
+
